@@ -22,4 +22,3 @@ def add_thoss_(set_name, *value):
 
 add_thoss_(fruits, lang)
 
-a
