@@ -7,7 +7,7 @@
 
 fruits = {"apple", "banana", "cherry"}
 lang = {"html", "css", "banana"}
-
+lang1 = {"html", "banana", "css"}
 # Set of fruits
 
 # Add Method
@@ -71,9 +71,48 @@ def common_(set_name, set_name1):
         print("First set", set_name, "\nSecond set", set_name1)
         ac = set_name.intersection(set_name1)
         print("Common item is :", ac)
-    except exception as e:
+    except Exception as e:
         print(e)
 
 # It takes 2 areguments both are seperate sets.
 
 # common_(lang, fruits)
+
+
+
+# Difference Method
+        # This method finds uncommon in both set.
+
+def un_common(set_name, set_name1):
+    try:
+        print("First set", set_name, "\nSecond set", set_name1)
+        ac = set_name.difference(set_name1)
+        print("Common item is :", ac)
+    except Exception as e:
+        print(e)
+
+# It takes 2 areguments both are seperate sets.
+
+# un_common(fruits, lang)
+
+
+# Issubset method
+        #it will copare both stes. if both sets have same itemsit returns true, if not it returns false
+
+def all_same(set_name, set_name1):
+    try:
+        ad = set_name.issubset(set_name1)
+        if ad == True:
+            print("Sets has same Items : " ,ad)
+        elif ad == False:
+            print("Sets has different Items ",ad )
+        else:
+            print("check set names")
+    except Exception as e:
+        print(e) 
+
+# It takes 2 areguments both are seperate sets.
+
+# all_same(lang, fruits)
+# all_same(lang, lang1)
+
