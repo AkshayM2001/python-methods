@@ -32,30 +32,48 @@ def used_quantity(actual):
         ### NOW MACHINE NUMBER IN WEEK BETWEEN 1 TO 5
         ## for that 8.2-8 = 0.2 using if else assigining 0.2 = 1, 0.4 = 2 and rest
         
-        per_week = tar / 5
-        per_week = per_week - week
+        per = tar / 5
+        per_week = per % 1
 
-        if per_week == 0.2:
-            first = "1"
-            print(first)
-        elif per_week == 0.4:
-            second = "2"
-            print(second)
-        elif per_week == 0.6:
-            third = "3"
-            print(third)
-        elif per_week == 0.8:
-            forth = "4"
-            print(forth)
-        elif per_week == 0:
-            fifth = "5"
-            print(fifth)
-        else:
-            print("Restart")
+        # if per_week == 0.2:
+        #     first = "1"
+        #     print(first)
+        # elif per_week == 0.4:
+        #     second = "2"
+        #     print(second)
+        # elif per_week == 0.6:
+        #     third = "3"
+        #     print(third)
+        # elif per_week == 0.8:
+        #     forth = "4"
+        #     print(forth)
+        # elif per_week == 0:
+        #     fifth = "5"
+        #     print(fifth)
+        # else:
+        #     print("Restart")
+
+            if per_week > 0.02 and per_week <0.2:
+                first = "1"
+                print(first)
+            elif per_week > 0.2 and per_week <0.4:
+                second = "2"
+                print(second)
+            elif per_week > 0.4 and per_week <0.6:
+                third = "3"
+                print(third)
+            elif per_week > 0.6 and per_week <0.8:
+                forth = "4"
+                print(forth)
+            elif per_week == 0 or per_week == 0.0:
+                fifth = "5"
+                print(fifth)
+            else:
+                print("Restart")
             
 
         #### NOW ADDIND WEEK NUMER + MACHINE NO
-        print(week, "week and ", )
+        print(week, "week and ", per_week "Machine")
         
         # if used == 0:
         #     pass
@@ -76,3 +94,9 @@ used_quantity(int(input("Enter Machine no :")))
 # 40/5 = 8
 # 41/5 = 8.2
 
+
+# a = 190
+# b = 5
+# c = a / b
+# ca = c % 1
+# print(ca)
