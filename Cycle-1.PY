@@ -32,10 +32,10 @@ def used_quantity(actual):
         ### NOW MACHINE NUMBER IN WEEK BETWEEN 1 TO 5
         ## for that 8.2-8 = 0.2 using if else assigining 0.2 = 1, 0.4 = 2 and rest
         
-        per = tar / 5
-        per_week = per % 1
+        # per = tar / 5
+        # per_week = per % 1
 
-        # if per_week == 0.2:
+        # # if per_week == 0.2:
         #     first = "1"
         #     print(first)
         # elif per_week == 0.4:
@@ -53,27 +53,27 @@ def used_quantity(actual):
         # else:
         #     print("Restart")
 
-            if per_week > 0.02 and per_week <0.2:
-                first = "1"
-                print(first)
-            elif per_week > 0.2 and per_week <0.4:
-                second = "2"
-                print(second)
-            elif per_week > 0.4 and per_week <0.6:
-                third = "3"
-                print(third)
-            elif per_week > 0.6 and per_week <0.8:
-                forth = "4"
-                print(forth)
-            elif per_week == 0 or per_week == 0.0:
-                fifth = "5"
-                print(fifth)
-            else:
-                print("Restart")
+            # if per_week > 0.02 and per_week <0.2:
+            #     first = "1"
+            #     print(first)
+            # elif per_week > 0.2 and per_week <0.4:
+            #     second = "2"
+            #     print(second)
+            # elif per_week > 0.4 and per_week <0.6:
+            #     third = "3"
+            #     print(third)
+            # elif per_week > 0.6 and per_week <0.8:
+            #     forth = "4"
+            #     print(forth)
+            # elif per_week == 0 or per_week == 0.0:
+            #     fifth = "5"
+            #     print(fifth)
+            # else:
+            #     print("Restart")
             
 
         #### NOW ADDIND WEEK NUMER + MACHINE NO
-        print(week, "week and ", per_week "Machine")
+        print(week, "week and ")
         
         # if used == 0:
         #     pass
@@ -87,7 +87,7 @@ def used_quantity(actual):
 
 target = 215 # int(input("Week Target : "))
 
-used_quantity(int(input("Enter Machine no :")))
+# ########### used_quantity(int(input("Enter Machine no :")))
 
 # 43 weeks and 215 mc
 # 40 no mc
@@ -100,3 +100,25 @@ used_quantity(int(input("Enter Machine no :")))
 # c = a / b
 # ca = c % 1
 # print(ca)
+
+
+
+# NOW WE NEED THAT CAN STORE ORDERD QUANTITY AND ADD NEXT ORDER 
+def order_quantity(order_recieved):
+    try:
+        old_order = order_recieved
+        new_order = old_order + order_recieved
+        live_order = 
+        print("Today recieved quantitry :", order_recieved, "\nTotal Quantity :", old_order)
+    except Exception as e:
+        print(e) 
+
+order_quantity(144)
+order_quantity(104)
+
+
+
+# NEED DATE FUNCTION FOR NEXT ORDER DATE PREDUCTION
+# ALSO SUBSTRACT THE USED MACHINE PARTS WITH CALCULATION
+# QUALITY REJECTS WILL BE INCLUDE
+# IT WILL NOTIFY IF QYANTITY IS LESS THAN 5
