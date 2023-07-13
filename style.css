@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: auto;
+    width: calc(100% - 2px);
+    background-color: blak;
+    
+}
+.container{
+    height: 50px;
+    max-width: 100%;
+    background-color: dodgerblue;
+    display: sticky;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    justify-content: end;
+}
+.navbar li{
+    list-style: none;
+    padding: 20px;
+    font-size: large;
+    font-weight: 550;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #c5d2a4;
+}
+.navbar li a{
+    transition: all 0.3s ease 0s;
+}
+.navbar li a:hover{
+    color: white;
+}

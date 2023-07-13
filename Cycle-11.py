@@ -21,7 +21,7 @@ class quantity:
         if dz < 6:
             print("Need to order next batch")
         else:
-            print("")
+            print("Still", dz, "quantites left")
 
 
 ab = quantity(0, 0, 0)
