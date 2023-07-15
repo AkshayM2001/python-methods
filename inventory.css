@@ -7,19 +7,38 @@
 body{
     height: auto;
     width: calc(100% - 2px);
-    background-color: blck;
-   
+    /* background-color: black; */
+    /* background: linear-gradiant(#a770ef, #cf8bf3, #fbd99b); */
+    background-image: linear-gradient(90deg, #a770ef, #cf8bf3, #fbd99b);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .back-it{
     display: grid;
     place-items: center;
-    height: 340px;
-    width: 320px;
-    border: 1px solid;
-    
+    margin-top: 30vh;
 }
-.back-it .inputs{
+.inputs{
     display: grid;
     place-items: center;
+    height: 180px;
+    width: 320px;
+    border: 1px solid skyblue;
+    border-color:black ;
+    border-color:red ;
+    background-color: rgba(0, 0, 0, 0.092);
+    border-radius: 9px;
+    /* background-image: linear-gradient(90deg, #c02425, #f0cb35) */
+}
+.text{
+    color: #92fe9d;
+}
+.mc-no{
+    border-radius: 4px;
+}
+.sbmt-btn{
+    background-color: #1073f6;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
 }
