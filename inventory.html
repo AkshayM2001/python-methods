@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventory</title>
     <link rel="stylesheet" href="inventory.css">
+    <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" /> -->
+    <!-- <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
 </head>
-<body>
 
+<body>
+    <!-- <py-script src="Cycle-11.py">
+    </py-script> -->
     <section class="back-it">
-        <div class="inputs">
+        <!-- <form class="frm" method="get" action="ab.get_stock_quantity()"> -->
+            <!-- <div class="inputs" oninput="ab.used()> -->
+            <div class="inputs">
             <!-- <input type="number"> -->
-            <p class="text"> Machine NO </p><input class="mc-no" type="number">
-            <button class="sbmt-btn"><p>Find</p></button>    
-        </div>
+                <p class="text"> Machine NO</p>
+                <input class="mc-no" type="number" placeholder="123..." >
+                <!-- <button class="sbmt-btn" onclick="ab.get_stock_quantity()"> -->
+                <input type="button" class="sbmt-btn" name="scriptbutton" value="Find" onclick="gety()">
+            </div>
+        <!-- </form> -->
     </section>
-    
+
+    <script>
+        function gety(){
+            $.ajax({
+                url: "Cycle-11.py",
+                context: document.body
+            }).done(function() {
+                alert('finished python script');;
+            });
+        };
+    </script>
 </body>
+
 </html>

@@ -27,5 +27,6 @@ class quantity:
 ab = quantity(0, 0, 0)
 # ab.plus(int(input("Enter recieved quantity : ")))
 ab.plus(900)
-ab.used = int(input("Machine number : "))
 ab.get_stock_quantity()
+
+   

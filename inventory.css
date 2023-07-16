@@ -26,7 +26,7 @@ body{
     border: 1px solid skyblue;
     border-color:black ;
     border-color:red ;
-    background-color: rgba(0, 0, 0, 0.092);
+    background-color: rgba(0, 0.5, 0.5, 0.5);
     border-radius: 9px;
     /* background-image: linear-gradient(90deg, #c02425, #f0cb35) */
 }
