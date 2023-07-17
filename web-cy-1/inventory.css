@@ -4,6 +4,43 @@
     padding: 0;
 }
 
+/* body{
+    height: auto;
+    width: calc(100% - 2px);
+    background-color: black;
+    
+} */
+.container{
+    height: 50px;
+    max-width: 100%;
+    background-color: dodgerblue;
+    display: sticky;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    justify-content: end;
+}
+.navbar li{
+    list-style: none;
+    padding: 20px;
+    font-size: large;
+    font-weight: 550;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #4e29f1;
+}
+.navbar li a{
+    transition: all 0.3s ease 0s;
+}
+.navbar li a:hover{
+    color: white;
+}
+
+/*                  Navbar Ended              */
+
+
 body{
     height: auto;
     width: calc(100% - 2px);
