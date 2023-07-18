@@ -100,12 +100,18 @@ header{
     text-transform: uppercase;
     cursor: pointer;
 }
-/* .sw-bu{
+.sw-bu{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 330px;
     width: 320px;
-    border: #222f3e 2px solid;
-} */
+    border: red 2px solid;
+}
+.bu{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
