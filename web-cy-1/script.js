@@ -8,3 +8,14 @@ hamburger.addEventListener("click", () =>{
 
 
 // NAVBAR ENDED
+
+// LOGIN PAGE SWITCH METHOD
+
+let color = ["#22f3e", "#f368e0", "#ee5253", "#0abde3", "#10ac84", "#5f27cd"];
+
+let i = 0;
+document.querySelector(".button").addEventListener("click",
+function(){
+    i= i < color.length ? ++i : 0;
+    document.querySelector(".log-back").style.background = color[i]
+});

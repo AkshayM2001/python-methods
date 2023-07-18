@@ -18,6 +18,9 @@ header{
     color: #4e29f1;
     transition: 0.3s ease;
 }
+.nav-items .nav-links:hover(.active){
+    color: #4e29f1;
+}
 .nav-links:hover{
     color: whitesmoke;
 }
@@ -32,6 +35,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    font-size: medium;
 }
 .hamburger{
     display: none;

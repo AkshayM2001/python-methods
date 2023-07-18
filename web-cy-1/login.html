@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update</title>
-    <link rel="stylesheet" href="update.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <header>
@@ -14,7 +14,7 @@
             <li class="nav-item" ><a class="nav-links" href="index.html">Home</a></li>
             <li class="nav-item" ><a class="nav-links" href="inventory.html">Inventory</a></li>
             <li class="nav-item" ><a class="nav-links" href="update.html">Update</a></li>
-            <li class="nav-item" ><a class="nav-links" href="login.html">Contact</a></li>
+            <li class="nav-item" ><a class="nav-links" href="#">Contact</a></li>
             <li class="nav-item" ><a class="nav-links" href="#">Login</a></li>
         </ul>
         <div class="hamburger">
@@ -25,6 +25,25 @@
     </nav>
 </header>
     <!-- NAVBAR  ENDED -->
+
+    <section class="log-back">
+        <div class="sw-bu">
+            <input type="email" placeholder="username">
+            <input type="password" placeholder="password">
+            <button class="button">Switch Color</button>
+        </div>
+    </section>
+
+<!-- <script>
+    let color = ["#22f3e", "#f368e0", "#ee5253", "#0abde3", "#10ac84", "#5f27cd"];
+
+let i = 0;
+document.querySelector("button").addEventListener("click",
+function(){
+    i= i < color.length ? ++i : 0;
+    document.querySelector("section").style.background = color[i]
+});
+</script> -->
 
 <script src="script.js"></script>
 </body>

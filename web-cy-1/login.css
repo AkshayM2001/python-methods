@@ -18,6 +18,9 @@ header{
     color: #4e29f1;
     transition: 0.3s ease;
 }
+.nav-items .nav-links:hover(.active){
+    color: #4e29f1;
+}
 .nav-links:hover{
     color: whitesmoke;
 }
@@ -81,44 +84,28 @@ header{
 }
 
 
-/*                  Navbar Ended              */
+/* NAVBSR ENDED  */
 
-
-body{
-    height: auto;
+.log-back{
+    background: #222f3e;
+    height: 90vh;
     width: calc(100% - 2px);
-    /* background-color: black; */
-    /* background: linear-gradiant(#a770ef, #cf8bf3, #fbd99b); */
-    background-image: linear-gradient(90deg, #a770ef, #cf8bf3, #fbd99b);
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-.back-it{
-    display: grid;
-    place-items: center;
-    margin-top: 30vh;
+.button{
+    padding: 10px;
+    background: #fff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
-.inputs{
-    display: grid;
-    place-items: center;
-    height: 180px;
+.sw-bu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 330px;
     width: 320px;
-    border: 1px solid skyblue;
-    border-color:black ;
-    border-color:red ;
-    background-color: rgba(0, 0.5, 0.5, 0.5);
-    border-radius: 9px;
-    /* background-image: linear-gradient(90deg, #c02425, #f0cb35) */
-}
-.text{
-    color: #92fe9d;
-}
-.mc-no{
-    border-radius: 4px;
-}
-.sbmt-btn{
-    background-color: #1073f6;
-    color: white;
-    padding: 5px;
-    border-radius: 8px;
+    border: #222f3e 2px solid;
 }

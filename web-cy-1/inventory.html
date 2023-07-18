@@ -11,44 +11,54 @@
 </head>
 
 <body>
-    <nav class="container">
-        <ul class="navbar">
-            <li><a class="active" aria-current="page" href="index.html">Home</a></li>
-            <li><a href="inventory.html">Inventory</a></li>
-            <li><a href="update.html">Update</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-brand">AK09</a>
+            <ul class="nav-menu">
+                <li class="nav-item" ><a class="nav-links" href="index.html">Home</a></li>
+                <li class="nav-item" ><a class="nav-links" href="inventory.html">Inventory</a></li>
+                <li class="nav-item" ><a class="nav-links" href="update.html">Update</a></li>
+                <li class="nav-item" ><a class="nav-links" href="#">Contact</a></li>
+                <li class="nav-item" ><a class="nav-links" href="#">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
     <!-- NAVBAR  ENDED -->
+    
 
-
-
+    
     <!-- <py-script src="Cycle-11.py">
     </py-script> -->
     <section class="back-it">
         <!-- <form class="frm" method="get" action="ab.get_stock_quantity()"> -->
             <!-- <div class="inputs" oninput="ab.used()> -->
-            <div class="inputs">
-            <!-- <input type="number"> -->
-                <p class="text"> Machine NO</p>
-                <input class="mc-no" type="number" placeholder="123..." >
-                <!-- <button class="sbmt-btn" onclick="ab.get_stock_quantity()"> -->
-                <input type="button" class="sbmt-btn" name="scriptbutton" value="Find" onclick="gety()">
-            </div>
-        <!-- </form> -->
-    </section>
-
-    <script>
-        function gety(){
-            $.ajax({
-                url: "Cycle-11.py",
-                context: document.body
-            }).done(function() {
-                alert('finished python script');;
-            });
-        };
-    </script>
+                <div class="inputs">
+                    <!-- <input type="number"> -->
+                    <p class="text"> Machine NO</p>
+                    <input class="mc-no" type="number" placeholder="123..." >
+                    <!-- <button class="sbmt-btn" onclick="ab.get_stock_quantity()"> -->
+                        <input type="button" class="sbmt-btn" name="scriptbutton" value="Find" onclick="gety()">
+                    </div>
+                    <!-- </form> -->
+                </section>
+                
+                <script>
+                    function gety(){
+                        $.ajax({
+                            url: "Cycle-11.py",
+                            context: document.body
+                        }).done(function() {
+                            alert('finished python script');;
+                        });
+                    };
+                    </script>
+<script src="script.js"></script>
 </body>
 
 </html>
