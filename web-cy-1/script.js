@@ -19,3 +19,23 @@ function(){
     i= i < color.length ? ++i : 0;
     document.querySelector(".log-back").style.background = color[i]
 });
+
+
+window.addEventListener('beforeunload', function(e) {
+    e.preventDefault();
+    e.returnValue = '';
+});
+
+
+
+// ENDED RELOD NOTIFICATION
+
+const check = document.querySelector(".check");
+const pass = document.querySelector(".bu2");
+
+check.onclick = togglePassword;
+
+function togglePassword(){
+if (check.checked) pass.type = "text";
+else pass.type = "password";
+}
