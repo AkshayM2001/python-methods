@@ -11,24 +11,30 @@ hamburger.addEventListener("click", () =>{
 
 // LOGIN PAGE SWITCH METHOD
 
-let color = ["#22f3e", "#f368e0", "#ee5253", "#0abde3", "#10ac84", "#5f27cd"];
+let color = ["#222f3e", "#f368e0", "#ee5253", "#0abde3", "#10ac84", "#5f27cd"];
 
 let i = 0;
 document.querySelector(".button").addEventListener("click",
 function(){
     i= i < color.length ? ++i : 0;
     document.querySelector(".log-back").style.background = color[i]
+    
 });
 
 
-window.addEventListener('beforeunload', function(e) {
-    e.preventDefault();
-    e.returnValue = '';
-});
+// RELOD NOTIFICATION
+
+// window.addEventListener('beforeunload', function(e) {
+//     e.preventDefault();
+//     e.returnValue = '';
+// });
 
 
 
 // ENDED RELOD NOTIFICATION
+
+
+// SEE PASSWORD CHANGING PASS TO TEXT 
 
 const check = document.querySelector(".check");
 const pass = document.querySelector(".bu2");
