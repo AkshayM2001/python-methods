@@ -165,7 +165,7 @@ header{
     z-index: -1;
 }
 
-.log-btn{
+/* .log-btn{
     text-decoration: none;
     letter-spacing: 2px;
     outline: 2px solid whitesmoke;
@@ -184,23 +184,23 @@ header{
     content: '';
     position: absolute;
     top: 0;
-    left: -50px;
+    left: 0;
     width: 0;
     height: 100%;
     background-color: whitesmoke;
-    transform: skewX(35deg);
+    transform: skewX(35deg); 
     z-index: -1;
     transition: width 1s;
-}
+} 
 .log-btn:hover::before{
-    width: 200%;
-}
-.rst-btn{
+    width: 100%;
+} */
+/* .rst-btn{
     padding: 5px;
     margin-right: 10px;
-}
+} */
 .button{
-    margin-left: 90px;
+    margin: auto;
 }
 /* .bu2{
     width: 100%;
@@ -223,6 +223,9 @@ header{
     font-size: 30px; 
 } */
 
+/* USERNAME && PASSWORD ANIMATION */
+
+
 :is(.bu2, .bu1){
     width: 100%;
     padding: 5px 0;
@@ -236,6 +239,7 @@ header{
 /* .cardinner:nth-child(2){
     grid-column: 1/3;
 } */
+
 .nl{
     position: absolute;
     left: 0;
@@ -258,4 +262,38 @@ header{
     /* color: rgb(162, 162, 198); */
     color: #fff;
     font-size: 16px;
+}
+ 
+/* LOGIN & RESET BUTTON STYLE */
+
+:is(.log-btn, .rst-btn){
+    margin: 0;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: 2px solid whitesmoke;
+    padding: 5px;
+    margin-right: 90px;
+    color: whitesmoke;
+    transition: color 1s;
+    position: relative;
+    overflow: hidden;
+    
+}
+:is(.log-btn, .rst-btn):hover{
+    color: red;
+}
+:is(.log-btn, .rst-btn)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: whitesmoke;
+    /* transform: skewX(35deg); */
+    z-index: -1;
+    transition: width 1s;
+}
+:is(.log-btn, .rst-btn):hover::before{
+    width: 100%;
 }

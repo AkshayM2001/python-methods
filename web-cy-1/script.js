@@ -36,12 +36,12 @@ function(){
 
 // SEE PASSWORD CHANGING PASS TO TEXT 
 
-const check = document.querySelector(".check");
-const pass = document.querySelector(".bu2");
+// const check = document.querySelector(".check");
+// const pass = document.querySelector(".bu2");
 
-check.onclick = togglePassword;
+// check.onclick = togglePassword;
 
-function togglePassword(){
-if (check.checked) pass.type = "text";
-else pass.type = "password";
-}
+// function togglePassword(){
+// if (check.checked) pass.type = "text";
+// else pass.type = "password";
+// }
