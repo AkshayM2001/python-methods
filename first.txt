@@ -1,0 +1,11 @@
+@media(max-width:380px){
+    .sw-bu{
+        transform: translateY(-50px);
+    }
+    .log-back{
+        background: whitesmoke
+    }
+    .button{
+        display: none;
+    }
+}

@@ -141,7 +141,7 @@ header{
     animation: move-up6 1s
     ease-in-out infinite alternate-reverse;
     z-index: -1; */
-    transform: translate(-152px, -162px);
+    transform: translate(-162px, -122px);
 }
 .circle2{
     /* width: 120px;
@@ -152,7 +152,7 @@ header{
     animation: move-up6 1s
     ease-in-out infinite alternate-reverse;
     z-index: -1; */
-    transform: translate(152px, 160px);
+    transform: translate(152px, 200px);
 }
 :is(.circle1, .circle2){
     width: 120px;
@@ -269,15 +269,15 @@ header{
 :is(.log-btn, .rst-btn){
     margin: 0;
     text-decoration: none;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     outline: 2px solid whitesmoke;
-    padding: 5px;
-    margin-right: 90px;
+    padding: 6px;
+    margin-right: 49px;
+    margin-left: 29px;
     color: whitesmoke;
     transition: color 1s;
     position: relative;
     overflow: hidden;
-    
 }
 :is(.log-btn, .rst-btn):hover{
     color: red;
@@ -286,7 +286,7 @@ header{
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0px;
     width: 0;
     height: 100%;
     background-color: whitesmoke;

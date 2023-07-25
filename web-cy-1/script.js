@@ -30,7 +30,6 @@ function(){
 // });
 
 
-
 // ENDED RELOD NOTIFICATION
 
 
