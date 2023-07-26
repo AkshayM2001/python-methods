@@ -297,3 +297,9 @@ header{
 :is(.log-btn, .rst-btn):hover::before{
     width: 100%;
 }
+h3{
+    color: #000;
+}
+h3 a{
+    color: whitesmoke;
+}
